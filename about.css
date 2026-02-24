@@ -1,0 +1,389 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Amethysta', sans-serif;
+}
+
+body {
+    background: #E6D7BB;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+        
+}
+
+
+header {
+    background: #B3A078;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-weight: bolder;
+    color: #B3A078;
+}
+
+h2{
+    
+    position: absolute;
+    left: 80px; /* Add this line to move the h1 to the left side of the navbar */
+    top: 7.5%;
+    transform: translate(0, -50%);
+    text-align: left; /* Update this line to left-align the text */
+    color: #5c4827;
+    z-index: 1;
+    padding: 10px;    
+    font-size: 20px;
+    
+}
+
+nav {
+    background: #B3A078;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px; /* Add this line to move the logo to the left */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #5c4827;
+}
+.logo img {
+    width: 40px; /* Reduce the width of the logo image */
+    height: 40px; /* Reduce the height of the logo image */
+    border-radius: 50%; /* Make the logo image circular */
+    margin-right: 10px; /* Add some space between the logo and the text */
+    vertical-align: middle; /* Vertically align the logo with the text */
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: auto; /* Add this line to move the nav list to the right */
+}
+
+.nav-list li {
+    margin: 0 10px;
+    border-right: 1px solid #333;
+    padding-right: 10px;
+}
+
+.nav-list li:last-child {
+    border-right: none;
+}
+
+.nav-list a {
+    color: #5c4827;
+    text-decoration: none;  
+}
+
+.nav-list a:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+
+
+.socialIcons{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: #5c4827;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footer{
+    color: #5c4827;
+    padding: 5px;
+    margin-right: 10%;
+    font-weight: bold;
+    margin-top: 3%;
+   
+}
+
+
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+    margin:20px auto ;
+}
+
+.heading h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #B3A078;
+}
+
+.heading p{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 35px;
+    background: #8F7853;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-bottom: 50px; /* Add this line to create a gap between the content and the footer */
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about-image img{
+    border-radius: 50%; /* add a 50% border radius to make the image a circle */
+    width: 100%; /* make the image take up the full width of its parent */
+    height: 100%; /* make the image take up the full height of its parent */
+    object-fit: cover; 
+}
+
+.about-image:hover img {
+    transform: scale(1.2);
+    border-radius: 50%; /* maintain the circular shape on hover */
+}
+
+.about-content{
+    flex: 3;
+    padding-left: 20px;
+}
+
+.about-content h2{
+    font-size: 60px;
+    margin-bottom: 15px;
+    color: white;
+    background: #8F7853;
+    
+}
+
+.about-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+    background: #8F7853;
+    max-width: 90%; /* Increase the width to 90% */
+    height: auto;
+}
+
+.about img {
+    margin-top: 20px; /* add some space between the text and the image */
+    border-radius: 10px; /* add a rounded corner to the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow to the image */
+    width: 100%; /* make the image take up the full width of its parent */
+    height: auto; /* maintain the aspect ratio of the image */
+    object-fit: cover; /* scale the image to cover the entire width */
+}
+
+
+
+
+.content-about h1{
+    color: #5c4827;
+}
+
+.content-about {
+    background-color: #8F7853; /* add a background color */
+    padding: 20px; /* add some padding to create space between the text and the edges */
+    padding-top: 50px; /* add extra padding to the top to make it taller */
+    padding-bottom: 50px; /* add extra padding to the bottom to make it taller */
+    text-align: left; /* align the text to the left */
+    width: 30%; /* set the width to 30% to create a left-aligned block */
+    float: left; /* use float to move the block to the left */
+    margin-left: 20px; /* add a margin to the left to move it a bit less to the left */
+    margin-top: 30px; /* add a margin to the top to add space above */
+    color: white;
+}
+
+.content2 {
+    background-color: #8F7853; /* add a background color */
+    padding: 20px; /* add some padding to create space between the text and the edges */
+    padding-top: 50px; /* add extra padding to the top to make it taller */
+    padding-bottom: 50px; /* add extra padding to the bottom to make it taller */
+    text-align: left; /* align the text to the left */
+    width: 30%; /* set the width to 30% to create a left-aligned block */
+    clear: both; /* clear the float of the .content-about block */
+    margin-top: 50px; /* add a margin to the top to add space above */
+    margin-left: 20px; /* add a margin to the left to move it a bit less to the left */
+    color: white;
+}
+.content-about {
+    background-color: #8F7853; /* add a background color */
+    padding: 20px; /* add some padding to create space between the text and the edges */
+    padding-top: 50px; /* add extra padding to the top to make it taller */
+    padding-bottom: 50px; /* add extra padding to the bottom to make it taller */
+    text-align: left; /* align the text to the left */
+    width: 30%; /* set the width to 30% to create a left-aligned block */
+    float: left; /* use float to move the block to the left */
+    margin-left: 20px; /* add a margin to the left to move it a bit less to the left */
+    margin-top: 30px; /* add a margin to the top to add space above */
+    color: white;
+}
+
+.content2 {
+    background-color: #8F7853; /* add a background color */
+    padding: 20px; /* add some padding to create space between the text and the edges */
+    padding-top: 50px; /* add extra padding to the top to make it taller */
+    padding-bottom: 50px; /* add extra padding to the bottom to make it taller */
+    text-align: left; /* align the text to the left */
+    width: 30%; /* set the width to 30% to create a left-aligned block */
+    float: left; /* use float to move the block to the left */
+    margin-left: 20px; /* add a margin to the left to move it a bit less to the left */
+    margin-top: 20px; /* add a margin to the top to add space above */
+    color: white;
+}
+.content2 h1{
+    color: #5c4827;
+}
+
+.content3{
+    background-color: #8F7853; /* add a background color */
+    padding: 20px; /* add some padding to create space between the text and the edges */
+    padding-top: 50px; /* add extra padding to the top to make it taller */
+    padding-bottom: 50px; /* add extra padding to the bottom to make it taller */
+    text-align: left; /* align the text to the left */
+    width: 30%; /* set the width to 30% to create a right-aligned block */
+    float: right; /* use float to move the block to the right */
+    margin-right: 20px; /* add a margin to the right to move it a bit less to the right */
+    margin-top: 20px; /* add a margin to the top to add space above */
+    color: white;
+}
+
+.content3 h1{
+    color: #5c4827;
+}
+
+.content4 {
+    background-color: #8F7853; /* add a background color */
+    padding: 20px; /* add some padding to create space between the text and the edges */
+    padding-top: 50px; /* add extra padding to the top to make it taller */
+    padding-bottom: 50px; /* add extra padding to the bottom to make it taller */
+    text-align: left; /* align the text to the left */
+    width: 30%; /* set the width to 30% to create a right-aligned block */
+    float: right; /* use float to move the block to the right */
+    margin-right: 20px; /* add a margin to the right to move it a bit less to the right */
+    margin-top: 20px; /* add a margin to the top to add space above */
+    color: white;
+    margin-bottom: 20px;
+}
+
+.content4 h1{
+    color: #5c4827;
+}
+
+main {
+    flex: 1;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 3px;
+    position: relative;
+    margin-top: auto;
+}
+
+footer{
+    background-color: #B3A078;
+    width: 100%;
+}
+
+
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #5c4827;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+/* Show hamburger menu on smaller screens */
+@media (max-width: 1024px) {
+    .hamburger {
+        display: flex; /* Make it visible on smaller screens */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none; /* Hidden until hamburger is clicked */
+        width: 100%;
+        background-color: #B3A078;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+        padding: 10px 0;
+    }
+
+    /* Display nav-list when active */
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+        padding-right: 0;
+        border-right: none;
+        text-align: left;
+        width: 100%;
+        padding-left: 20px;
+    }
+}

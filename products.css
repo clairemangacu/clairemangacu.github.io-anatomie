@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Amethysta', sans-serif;
+}
+
+body {
+    background: #E6D7BB;
+}
+
+header {
+    background: #B3A078;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-weight: bolder;
+    color: #B3A078;
+}
+
+nav {
+    background: #B3A078;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px; /* Add this line to move the logo to the left */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #5c4827;
+    
+}
+
+.logo img {
+    width: 40px; /* Reduce the width of the logo image */
+    height: 40px; /* Reduce the height of the logo image */
+    border-radius: 50%; /* Make the logo image circular */
+    margin-right: 10px; /* Add some space between the logo and the text */
+    vertical-align: middle; /* Vertically align the logo with the text */
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: auto; /* Add this line to move the nav list to the right */
+}
+
+.nav-list li {
+    margin: 0 10px;
+    border-right: 1px solid #333;
+    padding-right: 10px;
+}
+
+.nav-list li:last-child {
+    border-right: none;
+}
+
+.nav-list a {
+    color: #5c4827;
+    text-decoration: none;  
+}
+
+.nav-list a:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+h2{
+    
+    position: absolute;
+    left: 70px; /* Add this line to move the h1 to the left side of the navbar */
+    top: 7.5%;
+    transform: translate(0, -50%);
+    text-align: left; /* Update this line to left-align the text */
+    color: #5c4827;
+    z-index: 1;
+    padding: 10px;    
+    font-size: 20px;
+    
+    
+}
+
+.heading{
+    position: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 30px;
+    background: #8F7853;
+    margin-top: 10px;
+}
+
+.card {
+    display: flex;              /* Align items in a row */
+    justify-content: center;    /* Center the items horizontally */
+    flex-wrap: nowrap;          /* Prevent wrapping */
+    gap: 80px;                  /* Space between items */
+    padding: 20px;              /* Padding around the container */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;     /* Stack image and text vertically */
+    align-items: center;        /* Center image and text horizontally */
+}
+
+.item img {
+    width: 250px;                /* Make images a bit wider */
+    height: 300px;                 /* Set a fixed height for all images */
+    object-fit: cover;          /* Ensures the image covers the container */
+    border-radius: 5px;         /* Optional: Add some rounding to the corners */
+}
+
+.intro {
+    margin-top: 10px;           /* Space between the image and the intro text */
+    font-size: 16px;            /* Set the size of the intro text */
+    text-align: center;         /* Center the text under the image */
+    color: #543E0D;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+
+.card2 {
+    display: flex;               /* Align items in a row */
+    justify-content: center;     /* Center the items horizontally */
+    gap: 80px;                   /* Space between the items */
+    padding: 20px;               /* Padding around the container */
+}
+
+.item2 {
+    display: flex;
+    flex-direction: column;      /* Stack image and text (if added later) vertically */
+    align-items: center;         /* Center image horizontally */
+}
+
+.item2 img {
+    width: 250px;                /* Make images a bit wider */
+    height: 300px;               /* Set a fixed height for all images */
+    object-fit: cover;           /* Ensures the image covers the container without distortion */
+    border-radius: 5px;          /* Optional: Add some rounding to the corners */
+}
+
+
+footer{
+    background-color: #B3A078;
+}
+.footerContainer{
+    width: 100%;
+    padding: 3px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: #5c4827;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footer{
+    color: #5c4827;
+    padding: 5px;
+    margin-right: 10%;
+    font-weight: bold;
+    margin-top: 3%;
+   
+}
+
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #5c4827;
+    margin: 4px 0;
+    border-radius: 2px;
+  }
+  
+  /* Show hamburger menu on smaller screens */
+  @media (max-width: 1024px) {
+    .hamburger {
+        display: flex; /* Make it visible on smaller screens */
+    }
+  
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none; /* Hidden until hamburger is clicked */
+        width: 100%;
+        background-color: #B3A078;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+        padding: 10px 0;
+    }
+  
+    /* Display nav-list when active */
+    .nav-list.active {
+        display: flex;
+    }
+  
+    .nav-list li {
+        margin: 10px 0;
+        padding-right: 0;
+        border-right: none;
+        text-align: left;
+        width: 100%;
+        padding-left: 20px;
+    }
+  }
+  
+  .hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #5c4827;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+/* Show hamburger menu on smaller screens */
+@media (max-width: 1024px) {
+    .hamburger {
+        display: flex; /* Make it visible on smaller screens */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none; /* Hidden until hamburger is clicked */
+        width: 100%;
+        background-color: #B3A078;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+        padding: 10px 0;
+    }
+
+    /* Display nav-list when active */
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+        padding-right: 0;
+        border-right: none;
+        text-align: left;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .heading {
+        font-size: 24px; /* Smaller heading font size on mobile */
+        margin: 10px 0; /* Adjusted margins */
+    }
+}
+
+@media (max-width: 600px) {
+    .card, .card2 {
+        gap: 10px; /* Reduce gap on smaller screens */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .item img, .item2 img {
+        max-width: 100%; /* Full width on very small screens */
+    }
+
+    .heading {
+        font-size: 20px; /* Further reduce heading size */
+    }
+
+    .footer {
+        text-align: center; /* Center footer text */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .socialIcons {
+        justify-content: center; /* Center social icons */
+        margin-left: 0; /* Remove left margin */
+    }
+}
+
+
+
+
+
+
